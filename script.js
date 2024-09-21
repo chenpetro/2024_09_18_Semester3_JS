@@ -32,6 +32,7 @@
 const firstNumber = Number(prompt("Enter first number from 1 to 9"));
 const symbol = prompt("symbol from the list: +, -, /, *");
 const secondNumber = Number(prompt("Enter second number from 1 to 9"));
+if (firstNumber && secondNumber && symbol){
 if (firstNumber > 9 || secondNumber > 9) {
   alert("you selected wrong number, this is not allowed");
 } else if (firstNumber == 0 || secondNumber == 0) {
@@ -48,3 +49,8 @@ if (firstNumber > 9 || secondNumber > 9) {
     alert(firstNumber / secondNumber);
   }
 }
+} else {
+    alert ('Wrong input')
+}
+
+5 == 5 ? console.log('equal') : console.log('unequal')
